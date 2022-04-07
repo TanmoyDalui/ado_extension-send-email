@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "dalui-tanmoy-sendemail",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "name": "Send Email without SMPT config",
     "description": "The task can send email to Team members without SMTP configuration",
     "publisher": "tanmoydalui",
@@ -63,17 +63,6 @@
         },
         {
             "path": "img", "addressable": true
-        },
-        {
-            "path": "screenshots", "addressable": true
-        }
-    ],
-    "screenshots": [
-        {
-            "path": "screenshots/screenshot-1.JPG"
-        },
-        {
-            "path": "screenshots/screenshot-2.JPG"
         }
     ]
 }

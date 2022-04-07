@@ -7,11 +7,16 @@
     "helpMarkDown": "",
     "category": "Utility",
     "author": "Tanmoy Dalui",
+    "runsOn": ["Server", "Agent"], 
     "version": {
         "Major": 0,
         "Minor": 1,
         "Patch": 0
     },
+    "visibility": [
+        "Build",
+        "Release"
+    ],
     "instanceNameFormat": "Sent email with subject '$(emailSubject)'",
     "groups": [
         {
@@ -50,7 +55,7 @@
         },
         {
             "name": "emailBody",
-            "type": "string",
+            "type": "multiLine",
             "label": "Email Body",
             "defaultValue": "",
             "required": true,
@@ -59,8 +64,8 @@
         }
     ],
     "execution": {
-        "Node10": {
-            "target": "index.js"
+        "PowerShell3": {
+            "target": "Powershell-task.ps1"
         }
     }
 }

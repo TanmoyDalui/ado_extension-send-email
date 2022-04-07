@@ -20,11 +20,7 @@ async function run() {
             return;
         }
 
-        const emailCcAddress: string | undefined = tl.getInput('emailCcAddress', true);
-        if (emailCcAddress == null || emailCcAddress == '') {
-            tl.setResult(tl.TaskResult.Failed, 'Bad emailCcAddress was given');
-            return;
-        }
+        const emailCcAddress: string | undefined = tl.getInput('emailCcAddress', false);
 
         
         console.log('Email To address : ', emailToAddress);
