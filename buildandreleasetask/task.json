@@ -36,6 +36,15 @@
             "groupName": "inputGroup"
         },
         {
+            "name": "emailUsers",
+            "type": "identities",
+            "label": "Email Users",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Email Users. Comma separated email addresses.",
+            "groupName": "inputGroup"
+        },
+        {
             "name": "emailCcAddress",
             "type": "string",
             "label": "Email CC Address",
